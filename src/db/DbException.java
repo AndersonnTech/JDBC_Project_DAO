@@ -1,8 +1,11 @@
 package db;
 
-public class DbException extends RuntimeException{
+import java.io.Serializable;
+
+public class DbException extends RuntimeException implements Serializable{
 	
-	private static final long serialVersionUUID = 1L;
+	private static final long serialVersionUID = 1L;
+	
 	
 	public DbException(String msg) {
 		super(msg);
